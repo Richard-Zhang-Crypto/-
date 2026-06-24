@@ -1,11 +1,23 @@
-# 密码数学挑战赛赛题三
+# Cryptographic Mathematics Challenge - Problem 3 Source Code Repository
 
-运行linear_hull_search.cpp可搜索指定轮数的高相关度线性壳；运行cor_approximate_search.cpp可得到对test_data.txt中线性壳的相关度的估计效果(估计值、真实值、运行时间、得分、逼近成功数)。
+This repository contains the implementation code for Problem 3 of the Cryptographic Mathematics Challenge, covering the calculation of matrix order, linear hull search, and correlation estimation.
 
-使用matlab运行linear_hull_of_round.m可以
+## 📁 Directory Structure & Function Descriptions
 
-运行Calculate the order of the matrix.py可以求出赛题32bit算法的阶
+### 1. Matrix Order Calculation (Corresponding to Chapter 2 of the Paper)
+* **`Calculate the order of the matrix.py`**
+  * **Description**: Calculates the order of the matrix involved in the 32-bit SPN structure algorithm.
 
+### 2. Linear Hull Search & Correlation Estimation (Corresponding to Chapter 3 of the Paper)
+* **`linear_hull_search.cpp`**
+  * **Description**: Searches for high-correlation linear hulls for a user-specified number of rounds.
+* **`cor_approximate_search.cpp`**
+  * **Description**: Estimates the correlation of the linear hulls provided in `test_data.txt`.
+  * **Output Metrics**: Estimated values, true values, execution time, scores, and the number of successful approximations.
 
+### 3. 8-Round Linear Hull Construction (Corresponding to Chapter 4 of the Paper)
+* **`linear_hull_of_round.m`** (MATLAB)
+  * **Description**: Outputs the 8-round linear hull constructed in Chapter 4 and its corresponding correlation.
+  * **Output File**: Results are automatically saved to `result8.txt`.
 
-
+---
